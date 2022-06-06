@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.results {
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  overflow: scroll;
+}
+
+.results:last-child {
+  margin-bottom: 50px;
+}
