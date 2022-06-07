@@ -4,11 +4,14 @@ import "../styles/method.scss";
 interface ShamirProps {
   uS: number;
   pS: number;
+  sS: number;
   setUS: any;
   setPS: any;
+  setSS: any;
 }
 
 const ShamirMethod = (props: ShamirProps) => {
+
   const handleShamir = (e: any) => {
     e.preventDefault();
     let formData: any = new FormData(e.target);
@@ -21,7 +24,8 @@ const ShamirMethod = (props: ShamirProps) => {
       t = Number(d[1]),
       a0 = Number(d[2]),
       s = Number(d[3]);
-
+    
+    props.setSS(s);
     console.log(n, t, a0, s);
 
     let aNums = [],
@@ -30,7 +34,7 @@ const ShamirMethod = (props: ShamirProps) => {
       udzStr = "";
 
     while (true) {
-      p = randomInt(s > n ? s : n, s > n ? n : s);
+      p = randomInt(s > n ? s : n, (s > n ? n : s) + 20);
       if (czy_pierwsza(p)) break;
     }
     props.setPS(p);

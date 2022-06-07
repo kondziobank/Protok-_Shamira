@@ -3,6 +3,7 @@ import "../styles/secret.scss";
 
 interface ShamirSecretProps {
   sekretS: number;
+  sS: number;
   setSekretS: any;
 }
 
@@ -57,7 +58,7 @@ const ShamirSecret = (props: ShamirSecretProps) => {
       </form>
       <div className="results">
         <p>Sekret:</p>
-        <p>{props.sekretS}</p>
+        <p>{props.sS}</p>
       </div>
     </>
   );
