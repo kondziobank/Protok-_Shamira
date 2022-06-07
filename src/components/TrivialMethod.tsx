@@ -41,8 +41,11 @@ const TrivialMethod = (props: TrivialProps) => {
     <>
       <form className="form" onSubmit={handleForm}>
         <h1 className="header">Metoda trywialna dzielenia sekretu</h1>
+        <label>Liczba udziałów "n":</label>
         <input type="text" name="n" placeholder="n" />
+        <label>Przedział:</label>
         <input type="text" name="k" placeholder="k" />
+        <label>Sekret "s" (mniejszy od k-1):</label>
         <input type="text" name="s" placeholder="s" />
         <button>Oblicz udziały</button>
       </form>

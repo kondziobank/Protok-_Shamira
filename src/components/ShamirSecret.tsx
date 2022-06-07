@@ -47,8 +47,11 @@ const ShamirSecret = (props: ShamirSecretProps) => {
   return (
     <>
       <form className="form2" onSubmit={handleShamirSecret}>
+        <label>Tu wklejamy udziały:</label>
         <input type="text" name="udzialy" placeholder="udziały" />
+        <label>Liczba pierwsza wygenerowana przez algorytm rozdzielający:</label>
         <input type="text" name="p" placeholder="p" />
+        <label>Stopień wielomianu z algorytmu rozdzielającego:</label>
         <input type="text" name="t" placeholder="t" />
         <button>Oblicz sekret</button>
       </form>

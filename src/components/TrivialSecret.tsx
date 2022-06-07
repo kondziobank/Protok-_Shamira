@@ -29,7 +29,9 @@ const TrivialSecret = (props: SecretProps) => {
   return (
     <>
       <form className="form2" onSubmit={handleSecret}>
+        <label>Tu wklejamy udziały:</label>
         <input type="text" name="udzialy" placeholder="udziały" />
+        <label>Podajemy przedział z algorytmu rozdzielającego:</label>
         <input type="text" name="k" placeholder="k" />
         <button>Oblicz sekret</button>
       </form>

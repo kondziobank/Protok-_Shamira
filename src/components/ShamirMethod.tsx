@@ -50,9 +50,13 @@ const ShamirMethod = (props: ShamirProps) => {
     <>
       <form className="form" onSubmit={handleShamir}>
         <h1 className="header">Schemat Shamira</h1>
+        <label>Liczba udziałów "n":</label>
         <input type="text" name="n" placeholder="n" />
+        <label>Stopień wielomianu (będzie t-1):</label>
         <input type="text" name="k" placeholder="t" />
+        <label>Wyraz wolny wielomianu "a0":</label>
         <input type="text" name="a0" placeholder="a0" />
+        <label>Sekret: </label>
         <input type="text" name="s" placeholder="s" />
         <button>Oblicz udziały</button>
       </form>
